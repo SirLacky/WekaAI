@@ -13,10 +13,13 @@ public class LoadSaveData {
 
         //DataSource source =  new DataSource("C:\\Users\\lukasz.koziara\\Desktop\\Moje\\Projekty IntelliJ\\WekaAI\\src\\main\\resources\\weather.arff")
         //Instances dataset = source.getDataSet();
+
+        //Load data set from arff file.
         Instances dataset = new Instances(new BufferedReader(new FileReader("C:\\Users\\lukasz.koziara\\Desktop\\Moje\\Projekty IntelliJ\\WekaAI\\src\\main\\resources\\weather.arff")));
 
         System.out.println(dataset.toSummaryString());
 
+        //Save data set to new file.
         ArffSaver saver = new ArffSaver();
         saver.setInstances(dataset);
         saver.setFile(new File("C:\\Users\\lukasz.koziara\\Desktop\\Moje\\Projekty IntelliJ\\WekaAI\\src\\main\\resources\\report.arff"));
