@@ -15,8 +15,9 @@ import java.io.File;
 public class AttributeFiler {
     public static void attributeFilter(String[]parameters) {
 
-        //Load dataset
+
         try {
+            //Load dataset
             DataSource source = new DataSource("C:\\Users\\lukasz.koziara\\Desktop\\Moje\\Projekty IntelliJ\\WekaAI\\src\\main\\resources\\weather.arff");
             Instances dataset = source.getDataSet();
 

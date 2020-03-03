@@ -11,9 +11,6 @@ import java.io.FileReader;
 public class LoadSaveData {
     public static void loadSavedData() throws  Exception{
 
-        //DataSource source =  new DataSource("C:\\Users\\lukasz.koziara\\Desktop\\Moje\\Projekty IntelliJ\\WekaAI\\src\\main\\resources\\weather.arff")
-        //Instances dataset = source.getDataSet();
-
         //Load data set from arff file.
         Instances dataset = new Instances(new BufferedReader(new FileReader("C:\\Users\\lukasz.koziara\\Desktop\\Moje\\Projekty IntelliJ\\WekaAI\\src\\main\\resources\\weather.arff")));
 

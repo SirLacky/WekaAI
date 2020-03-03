@@ -17,12 +17,12 @@ public class DiscretizeAttribute {
 
             //Set Options
             String [] options = new String[4]; //Create array for every needed command to execute.
-            options[0] = "-B";
-            options[1] = "2";
-            options[2] = "-R";
-            options[3] = "0";
+            options[0] = "-B"; //B - How much bins to discretize data into
+            options[1] = "10";
+            options[2] = "-R"; //R - which columns to discretize (ex. 1-2 or first-last)
+            options[3] = "first-last";
 
-            //Applay given comments to discretization.
+            //Applay given commends to discretization.
             Discretize discretize = new Discretize();
             discretize.setOptions(options);
             discretize.setInputFormat(dataset);

@@ -5,6 +5,7 @@ import weka.core.converters.ArffSaver;
 import weka.core.converters.ConverterUtils;
 import weka.filters.Filter;
 import weka.filters.unsupervised.instance.NonSparseToSparse;
+import weka.core.converters.ConverterUtils.DataSource;
 
 import java.io.File;
 
@@ -19,7 +20,7 @@ public class SparseConverter {
     public static void sparseConverter(){
         try{
             //Load old dataset
-            ConverterUtils.DataSource source = new ConverterUtils.DataSource("C:\\Users\\lukasz.koziara\\Desktop\\Moje\\Projekty IntelliJ\\WekaAI\\src\\main\\resources\\weather.arff");
+            DataSource source = new DataSource("C:\\Users\\lukasz.koziara\\Desktop\\Moje\\Projekty IntelliJ\\WekaAI\\src\\main\\resources\\weather.arff");
             Instances dataset = source.getDataSet();
 
             NonSparseToSparse sp = new NonSparseToSparse();

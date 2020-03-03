@@ -1,22 +1,21 @@
-@relation weather-weka.filters.unsupervised.attribute.Remove-R2
+@relation 'weather-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.GreedyStepwise -B -T -1.7976931348623157E308 -N -1 -num-slots 1'
 
 @attribute outlook {sunny,overcast,rainy}
-@attribute humidity numeric
 @attribute windy {TRUE,FALSE}
 @attribute play {yes,no}
 
 @data
-sunny,85,FALSE,no
-sunny,90,TRUE,no
-overcast,86,FALSE,yes
-rainy,96,FALSE,yes
-rainy,80,FALSE,yes
-rainy,70,TRUE,no
-overcast,65,TRUE,yes
-sunny,95,FALSE,no
-sunny,70,FALSE,yes
-rainy,80,FALSE,yes
-sunny,70,TRUE,yes
-overcast,90,TRUE,yes
-overcast,75,FALSE,yes
-rainy,91,TRUE,no
+sunny,FALSE,no
+sunny,TRUE,no
+overcast,FALSE,yes
+rainy,FALSE,yes
+rainy,FALSE,yes
+rainy,TRUE,no
+overcast,TRUE,yes
+sunny,FALSE,no
+sunny,FALSE,yes
+rainy,FALSE,yes
+sunny,TRUE,yes
+overcast,TRUE,yes
+overcast,FALSE,yes
+rainy,TRUE,no
