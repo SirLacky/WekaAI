@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
+import static main.java.com.github.sirlacky.WekaAI.AttInst.attributeInst;
 import static main.java.com.github.sirlacky.WekaAI.AttrSelection.attrSelection;
 import static main.java.com.github.sirlacky.WekaAI.CSV2ArffConverter.CSV2ArffConverter;
 import static main.java.com.github.sirlacky.WekaAI.AttributeFiler.attributeFilter;
@@ -25,6 +26,8 @@ public class Main {
 
         //discretizeAttribute();
 
-        attrSelection();
+        //attrSelection();
+
+        attributeInst();
     }
 }
